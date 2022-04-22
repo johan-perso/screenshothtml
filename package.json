@@ -1,0 +1,11 @@
+{
+	"name": "screenshothtml",
+	"version": "1.0.0",
+	"description": "Capturer du code HTML, depuis votre code NodeJS.",
+	"main": "index.js",
+	"author": "JohanStickman",
+	"license": "MIT",
+	"dependencies": {
+		"puppeteer": "^13.6.0"
+	}
+}
