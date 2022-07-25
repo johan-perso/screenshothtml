@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="https://egkoppel.github.io/product-sans/css/product-sans-500-all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100vw;
+			height: 100vh;
+			display: grid;
+			place-items: center;
+			font-family: 'Product Sans', sans-serif;
+			text-align: center;
+		}
+		h1 {
+			font-weight: 700;
+			font-size: 2.25rem;
+		}
+		p {
+			font-weight: 500;
+			font-size: 1.5rem;
+		}
+	</style>
+	<script>
+		window.onload = function(){
+			document.getElementById('width').innerText = window.innerWidth
+			document.getElementById('height').innerText = window.innerHeight
+		}
+	</script>
+</head>
+<body>
+	<h1>
+		Hello world!
+		<p>Viewport:
+			<u id="width"></u>x<u id="height"></u>
+		</p>
+	</h1>
+</body>
+</html>
