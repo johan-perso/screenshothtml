@@ -39,7 +39,7 @@ var image = await screenshot({ <the options> })
 | viewportHeight     | int     | `900                  ` | Viewport height                                                                     |
 | autoCloseAfter     | int     | `100000               ` | Edit the time (in ms) required before the browser close after the screenshot        |
 | puppeteerArguments | object  | `{headless: false}    ` | Add additional arguments passed to [Puppeteer](https://github.com/puppeteer/puppeteer/blob/v13.7.0/docs/api.md#puppeteerlaunchoptions) while creating the browser             |
-| waitForDomLoaded   | boolean | `false                ` | Wait before the DOM finish to load before taking a screenshot, [more info here](#options-waitfordomloaded). |
+| waitForDomLoaded   | boolean | `false                ` | Wait before the DOM finish to load before taking a screenshot, [more info here](#waitfordomloaded). |
 
 
 ## APIs
