@@ -138,5 +138,3 @@ L'option `waitForDomLoaded` (boolean) permet de décider si le navigateur doit a
 ## Licence
 
 MIT © [Johan](https://johanstickman.com)
-
-TODO: afficher tout les élements qui sont exporté
