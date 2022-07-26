@@ -104,18 +104,18 @@ Lorsque la variable d'environnement `SCREENSHOTHTML_SHOW_STATISTICS` est défini
 > Quelques résultats sur les exemples présents dans ce repo, réalisé sur [mon ordinateur](https://consumer.huawei.com/fr/laptops/matebook-d-15/) (pas vraiment dans les meilleurs moments).
 
 Avec l'option `waitForDomLoaded` sur `false` :
-* browserOpen: ~330
-* pageOpen: ~115
-* gotoPage: ~990
-* screenshot: ~310
-* closePage: ~3
+* browserOpen: ~330ms
+* pageOpen: ~115ms
+* gotoPage: ~990ms
+* screenshot: ~310ms
+* closePage: ~3ms
 
 Avec l'option `waitForDomLoaded` sur `true` :
-* browserOpen: ~220
-* pageOpen: ~120
-* gotoPage: ~20
-* screenshot: ~480
-* closePage: ~4
+* browserOpen: ~220ms
+* pageOpen: ~120ms
+* gotoPage: ~20ms
+* screenshot: ~480ms
+* closePage: ~4ms
 
 
 ## Charger une URL plutôt que du code
@@ -132,7 +132,7 @@ Le navigateur peut aussi être fermé manuellement avec `close()`.
 
 ## Options `waitForDomLoaded`
 
-L'option `waitForDomLoaded` (boolean) permet de décider si le navigateur doit attendre que le DOM soit chargé avant de prendre une capture. Si la valeur est défini sur `false` (ou n'est pas défini), le navigateur utilisera `networkidle2`. Lorsque l'option est activé (`true`), les captures d'écrans sont plus rapides, mais l'importation de certains élements et l'exécutions de certains scripts peuvent être annulés, cela peut être pratique lors d'un chargement de page ne contenant qu'un simple code HTML.
+L'option `waitForDomLoaded` (boolean) permet de décider si le navigateur doit attendre que le DOM soit chargé avant de prendre une capture. Si la valeur est défini sur `false` (ou n'est pas défini), le navigateur utilisera `networkidle0`. Lorsque l'option est activé (`true`), les captures d'écrans sont plus rapides, mais l'importation de certains élements et l'exécutions de certains scripts peuvent être annulés, cela peut être pratique lors d'un chargement de page ne contenant qu'un simple code HTML.
 
 
 ## Licence
