@@ -104,18 +104,18 @@ When the environment variable `SCREENSHOTHTML_SHOW_STATISTICS` is set, statistic
 > Some results on the examples in this repo, tested on my computer.
 
 With the option `waitForDomLoaded` defined with `false`:
-* browserOpen: ~330
-* pageOpen: ~115
-* gotoPage: ~990
-* screenshot: ~310
-* closePage: ~3
+* browserOpen: ~330ms
+* pageOpen: ~115ms
+* gotoPage: ~990ms
+* screenshot: ~310ms
+* closePage: ~3ms
 
 With the option `waitForDomLoaded` defined avec `true` :
-* browserOpen: ~220
-* pageOpen: ~120
-* gotoPage: ~20
-* screenshot: ~480
-* closePage: ~4
+* browserOpen: ~220ms
+* pageOpen: ~120ms
+* gotoPage: ~20ms
+* screenshot: ~480ms
+* closePage: ~4ms
 
 
 ## Load a URL instead of code
@@ -132,7 +132,7 @@ The browser can also be closed manually with the `close()` function.
 
 ## `waitForDomLoaded`
 
-The option `waitForDomLoaded` (boolean) can be used to define if the browser should wait for the DOM to be loaded before taking a screenshot. If the value is `false` (or not defined), the browser will use `networkidle2`, and when it is activated (`true`), the screenshots are faster, but some elements and scripts may be not load, which can be useful if the page only contains a simple HTML code.
+The option `waitForDomLoaded` (boolean) can be used to define if the browser should wait for the DOM to be loaded before taking a screenshot. If the value is `false` (or not defined), the browser will use `networkidle0`, and when it is activated (`true`), the screenshots are faster, but some elements and scripts may be not load, which can be useful if the page only contains a simple HTML code.
 
 
 ## License
