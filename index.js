@@ -25,7 +25,7 @@ var puppeteerArgs = ['--autoplay-policy=user-gesture-required','--disable-backgr
  * @param   {number}   options.viewportHeight        Viewport height
  * @param   {number}   options.autoCloseAfter        Edit the time (in ms) required before the browser close after the screenshot
  * @param   {number}   options.puppeteerArguments    Add additional arguments passed to puppeteer while creating the browser (don't work if already created)
- * @param   {number}   options.waitForDomLoaded      Use "domcontentloaded" instead of "networkidle2" (can cause problems, check the documentation)
+ * @param   {number}   options.waitForDomLoaded      Use "domcontentloaded" instead of "networkidle0" (can cause problems, check the documentation)
 */
 async function captureHTML(options= { html: `<h1>No code gived :(</h1>`, maxTimeout: 10000, viewportWidth: 1920, viewportHeight: 1080, autoCloseAfter: 60000, puppeteerArguments: {}, waitForDomLoaded: false }){
 	// Get the list of arguments to pass to puppeteer
@@ -55,8 +55,8 @@ async function captureHTML(options= { html: `<h1>No code gived :(</h1>`, maxTime
 	// Define the HTML code
 	if(process.env.SCREENSHOTHTML_SHOW_STATISTICS) someDates.gotoPage = new Date().getTime()
 	options.html = String(options.html)
-	if(options?.html?.startsWith('url:')) await page.goto(options?.html?.replace('url:',''), { waitUntil: (options.waitForDomLoaded ? 'domcontentloaded' : 'networkidle2'), timeout: options?.maxTimeout || 10000 })
-	else await page.setContent(options?.html, { waitUntil: (options.waitForDomLoaded ? 'domcontentloaded' : 'networkidle2'), timeout: options?.maxTimeout || 10000 })
+	if(options?.html?.startsWith('url:')) await page.goto(options?.html?.replace('url:',''), { waitUntil: (options.waitForDomLoaded ? 'domcontentloaded' : 'networkidle0'), timeout: options?.maxTimeout || 10000 })
+	else await page.setContent(options?.html, { waitUntil: (options.waitForDomLoaded ? 'domcontentloaded' : 'networkidle0'), timeout: options?.maxTimeout || 10000 })
 	if(process.env.SCREENSHOTHTML_SHOW_STATISTICS) console.log(`gotoPage: ${new Date().getTime() - someDates.gotoPage}`)
 
 	// Do the screenshot
