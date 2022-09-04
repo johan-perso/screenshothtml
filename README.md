@@ -137,4 +137,4 @@ The option `waitForDomLoaded` (boolean) can be used to define if the browser sho
 
 ## License
 
-MIT © [Johan](https://johanstickman.com)
+MIT © [Johan](https://johanstick.me)
