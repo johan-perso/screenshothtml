@@ -137,4 +137,4 @@ L'option `waitForDomLoaded` (boolean) permet de décider si le navigateur doit a
 
 ## Licence
 
-MIT © [Johan](https://johanstick.me)
+MIT © [Johan](https://johanstick.fr)
